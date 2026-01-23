@@ -1,0 +1,27 @@
+def addition(a, b):
+    return a + b
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if b == 0:
+        return "zero division not possiable"
+    return a / b
+if __name__ == "__main__":
+        print("welcome to small level calcualtor")
+        n1 = int(input("enter number 1:"))
+        n2 = int(input("enter number 2:"))
+        print("1. addition /n 2. subcration /n 3. mul /n 4. div.")
+        choice = int(input("enter your choice"))
+        if choice == 1:
+            print("sum of two numbers is:", Addition(n1, n2))
+        elif choice == 2:
+            print("subcraction of two numbers is:",subcraction(n1, n2))
+        elif choice == 3:
+            print("multiplication of two numbers is:", mul(n1, n2))
+        elif choice ==4:
+            print("dividion of two nmbers is:", div(n1, n2))
+        else:
+            print(" please select correct operation ")
+            
+            
